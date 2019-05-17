@@ -32,63 +32,63 @@ const permutate = require('permutate');
 
 ```js
 permutate({
-  characters : 'abcdefghijklmnopqrstuvwxyz0123456789'.split(''),
-  length : 3
+  characters: 'abcdefghijklmnopqrstuvwxyz0123456789'.split(''),
+  length: 3
 })
 // ['aaa', 'aab', 'aac' ... '997', '998', '999'].length = 46656
 ```
 
 ```js
 permutate({
-  characters : '1.23'.split('.'),
-    length: 2
+  characters: '1.23'.split('.'),
+  length: 2
 })
 // ['11', '123', '231', '2323']
 ```
 
 ```js
 permutate({
-  charactersAt : {
-    0 : ['0', '1', '2']
+  charactersAt: {
+    0: ['0', '1', '2']
   },
-  characters : 'abcdefghijklmnopqrstuvwxyz'.split(''),
-  length : 2
+  characters: 'abcdefghijklmnopqrstuvwxyz'.split(''),
+  length: 2
 })
 // ['0a', '0b', '0c' ... '2x', '2y', '2z'].length = 78
 ```
 
 ```js
 permutate({
-  charactersAt : {
-    0 : ['a', 'b'],
-    1 : ['-']
+  charactersAt: {
+    0: ['a', 'b'],
+    1: ['-']
   },
-  characters : 'abcdefghijklmnopqrstuvwxyz'.split(''),
-  length : 3
+  characters: 'abcdefghijklmnopqrstuvwxyz'.split(''),
+  length: 3
 })
 // ['a-a', 'a-b', 'a-c' ... 'b-x', 'b-y', 'b-z'].length = 52
 ```
 
 ```js
 permutate({
-  characters : 'abcdefghijklmnopqrstuvwxyz0123456789'.split(''),
-  length : 5,
-  limit : 30
+  characters: 'abcdefghijklmnopqrstuvwxyz0123456789'.split(''),
+  length: 5,
+  limit: 30
 })
 // ['fn6p3', 'x83na', '3v20r' ... ].length = 30
 ```
 
 ```js
 permutate({
-  characters : 'abcdefghijklmnopqrstuvwxyz0123456789'.split(''),
-  length : 8,
+  characters: 'abcdefghijklmnopqrstuvwxyz0123456789'.split(''),
+  length: 8,
 })
 // out of memory
 ```
 
 ```js
 permutate({
-  characters : '123'.split(''),
+  characters: '123'.split(''),
   length: 3,
   unique: true
 })
