@@ -4,7 +4,7 @@
 const expect = require('chai').expect
 const permutate = require('../index')
 
-describe('#permutator', () => {
+describe('#permutate()', () => {
   it('should return all permutations', () => {
     const result = permutate({
       characters: '123'.split(''),
