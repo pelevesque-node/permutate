@@ -27,7 +27,7 @@ Permutates elements. Same as https://www.npmjs.com/package/permutater, but with 
 ## Usage
 
 ```js
-const permutate = require('permutate');
+const permutate = require('@pelevesque/permutate');
 ```
 
 ```js
