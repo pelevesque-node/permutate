@@ -1,6 +1,6 @@
 {
   "name": "@pelevesque/permutate",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Permutates elements. Same as https://www.npmjs.com/package/permutater, but with the addition of filtering offsets.",
   "main": "index.js",
   "engines": {
