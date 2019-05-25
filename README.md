@@ -6,6 +6,10 @@
 
 Permutates elements. Same as https://www.npmjs.com/package/permutater, but with the addition of filtering unique sets.
 
+When `removeOffsets` is set with an integer `>` 0, `removeOffsets` is run with the integer as the step to use.
+
+@see https://www.npmjs.com/package/@pelevesque/remove-offsets for more details.
+
 ## Node Repository
 
 [https://www.npmjs.com/package/@pelevesque/permutate](https://www.npmjs.com/package/@pelevesque/permutate)
@@ -90,7 +94,7 @@ permutate({
 permutate({
   characters: '123'.split(''),
   length: 3,
-  removeOffsets: 1
+  removeOffsets: 1 // indicates the step to use when removing offsets
 })
 // [
 //   '111', '112', '113', '122', '123', '132', '133',
@@ -103,7 +107,7 @@ permutate({
 permutate({
   characters: '123'.split(''),
   length: 3,
-  removeOffsets: 2
+  removeOffsets: 2 // indicates the step to use when removing offsets
 })
 // [
 //   '111', '112', '113', '122', '123', '132', '133',
