@@ -1,7 +1,7 @@
 {
   "name": "@pelevesque/permutate",
   "version": "0.0.4",
-  "description": "Permutates elements. Same as https://www.npmjs.com/package/permutater, but with the addition of filtering unique sets.",
+  "description": "Permutates elements. Same as https://www.npmjs.com/package/permutater, but with the addition of filtering offsets.",
   "main": "index.js",
   "engines": {
     "node": ">=5.0.0"
@@ -35,8 +35,7 @@
     "standard": "^12.0.1"
   },
   "dependencies": {
-    "@pelevesque/sort-string": "0.0.1",
-    "array-uniq": "^2.1.0",
+    "@pelevesque/remove-offsets": "0.0.2",
     "permutater": "^1.0.2"
   }
 }

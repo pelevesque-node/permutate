@@ -1,16 +1,12 @@
 'use strict'
 
 const permutater = require('permutater')
-const sortString = require('@pelevesque/sort-string')
-const arrayUniq = require('array-uniq')
+const removeOffsets = require('@pelevesque/remove-offsets')
 
 module.exports = (obj) => {
   let permutations = permutater(obj)
-  if (obj.unique) {
-    for (let i = 0; i < permutations.length; i++) {
-      permutations[i] = sortString(permutations[i])
-    }
-    permutations = arrayUniq(permutations)
+  if (obj.removeOffsets > 0) {
+    removeOffsets(permutations, obj.removeOffsets)
   }
   return permutations
 }

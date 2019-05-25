@@ -47,13 +47,31 @@ describe('#permutate()', () => {
     expect(result).to.equal(expected)
   })
 
-  it('should return all unique permutations', () => {
+  it('should remove offsets with a step of 1', () => {
     const result = permutate({
       characters: '123'.split(''),
       length: 3,
-      unique: true
+      removeOffsets: 1
     })
-    const expected = ['111', '112', '113', '122', '123', '133', '222', '223', '233', '333']
+    const expected = [
+      '111', '112', '113', '122', '123', '132', '133',
+      '222', '223', '233',
+      '333'
+    ]
+    expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
+  })
+
+  it('should remove offsets with a step of 2', () => {
+    const result = permutate({
+      characters: '123'.split(''),
+      length: 3,
+      removeOffsets: 2
+    })
+    const expected = [
+      '111', '112', '113', '122', '123', '132', '133',
+      '211', '212', '213', '222', '223', '233',
+      '311', '312', '313', '322', '323', '333'
+    ]
     expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
   })
 })
