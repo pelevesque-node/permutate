@@ -29,13 +29,22 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "coveralls": "^3.0.3",
+    "coveralls": "^3.0.4",
     "istanbul": "^0.4.5",
     "mocha": "^6.1.4",
     "standard": "^12.0.1"
   },
   "dependencies": {
-    "@pelevesque/remove-offsets": "0.0.2",
-    "permutater": "^1.0.2"
+    "@pelevesque/are-substrings-over-maximum-density": "^0.0.2",
+    "@pelevesque/are-substrings-over-maximum-occurrences": "^0.0.2",
+    "@pelevesque/are-substrings-under-minimum-density": "^0.0.2",
+    "@pelevesque/are-substrings-under-minimum-occurrences": "^0.0.2",
+    "@pelevesque/remove-anagrams": "^0.0.1",
+    "@pelevesque/remove-duplicates": "^1.0.0",
+    "@pelevesque/remove-offsets": "^1.0.3",
+    "@pelevesque/remove-palindromes": "^1.0.1",
+    "@pelevesque/sum-digits": "^0.0.7",
+    "array-flatten": "^2.1.2",
+    "isobject": "^4.0.0"
   }
 }
