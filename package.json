@@ -4,7 +4,7 @@
   "description": "Permutates elements. Same as https://www.npmjs.com/package/permutater, but with the addition of filtering offsets.",
   "main": "index.js",
   "engines": {
-    "node": ">=5.0.0"
+    "node": ">=6.4.0"
   },
   "scripts": {
     "test": "standard && mocha --reporter spec",
@@ -29,21 +29,27 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "coveralls": "^3.0.4",
+    "coveralls": "^3.0.5",
     "istanbul": "^0.4.5",
-    "mocha": "^6.1.4",
-    "standard": "^12.0.1"
+    "mocha": "^6.2.0",
+    "standard": "^13.1.0"
   },
   "dependencies": {
-    "@pelevesque/are-substrings-over-maximum-density": "^0.0.2",
-    "@pelevesque/are-substrings-over-maximum-occurrences": "^0.0.2",
-    "@pelevesque/are-substrings-under-minimum-density": "^0.0.2",
-    "@pelevesque/are-substrings-under-minimum-occurrences": "^0.0.2",
-    "@pelevesque/remove-anagrams": "^0.0.1",
-    "@pelevesque/remove-duplicates": "^1.0.0",
-    "@pelevesque/remove-offsets": "^1.0.3",
-    "@pelevesque/remove-palindromes": "^1.0.1",
-    "@pelevesque/sum-digits": "^0.0.7",
+    "@pelevesque/are-substrings-over-maximum-density": "^0.0.4",
+    "@pelevesque/are-substrings-over-maximum-occurrences": "^0.0.4",
+    "@pelevesque/are-substrings-under-minimum-density": "^0.0.4",
+    "@pelevesque/are-substrings-under-minimum-occurrences": "^0.0.4",
+    "@pelevesque/has_prohibited_substring": "^0.0.2",
+    "@pelevesque/has_prohibited_substring_after_sums": "^0.0.2",
+    "@pelevesque/has_prohibited_substring_at_indexes": "^1.0.1",
+    "@pelevesque/has_required_substrings": "^0.0.3",
+    "@pelevesque/has_required_substrings_after_sums": "^0.0.3",
+    "@pelevesque/has_required_substrings_at_indexes": "^1.1.1",
+    "@pelevesque/remove-anagrams": "^0.0.2",
+    "@pelevesque/remove-duplicates": "^1.0.1",
+    "@pelevesque/remove-offsets": "^1.0.4",
+    "@pelevesque/remove-palindromes": "^1.0.2",
+    "@pelevesque/sum-digits": "^0.0.9",
     "array-flatten": "^2.1.2",
     "isobject": "^4.0.0"
   }
