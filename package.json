@@ -46,7 +46,6 @@
     "@pelevesque/has-required-substrings-after-sums": "^0.0.1",
     "@pelevesque/has-required-substrings-at-indexes": "^0.0.1",
     "@pelevesque/remove-anagrams": "^0.0.2",
-    "@pelevesque/remove-duplicates": "^1.0.1",
     "@pelevesque/remove-offsets": "^1.0.4",
     "@pelevesque/remove-palindromes": "^1.0.2",
     "@pelevesque/sum-digits": "^0.0.9",
